@@ -1,4 +1,4 @@
-from .Exception import ImproperConfiguredInput
+from Chapter2.Exception import ImproperConfiguredInput
 
 def neuron_layer(input_values, weights_list_of_list, bias_list):
     """
