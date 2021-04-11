@@ -6,6 +6,9 @@ if __name__ == '__main__':
     weights_list = [0.9, -0.6, 1.3, 0.2]
     bias = 2
 
+    if len(input_list)!= len(weights_list):
+        raise ImproperConfiguredInput
+
     output = np.dot(input_list, weights_list) + bias
     
     print(output)
