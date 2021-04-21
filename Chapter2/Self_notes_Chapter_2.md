@@ -11,10 +11,16 @@ And the number of weights would be :-
 
 # Definitions
 
-for a set of data coming from a bunch of sensors :-
+For a set of data coming from a bunch of sensors :-
 
 _Each Measurement will be a **feature**._
 _A group of features will be a **feature set**._
 _Value of a feature set is referred as a **sample**_
 
 **output = `activation`(weights * inputs + bias)**
+
+weights and biases are adjustible paramaters of a neural network
+
+# First Neurons
+
+When you initialize parameters in neural networks, our network will have weights initialized randomly, and biases set as zero to start. The values for weights and biases are what get “trained,” and they are what make a model actually work (or not work).
