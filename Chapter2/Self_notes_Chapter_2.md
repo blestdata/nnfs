@@ -9,3 +9,12 @@ And the number of weights would be :-
 
 `weights = n2 * n1 + n3 * n2 + n4 * n3 + ..... + ni * n(i-1)`
 
+# Definitions
+
+for a set of data coming from a bunch of sensors :-
+
+_Each Measurement will be a **feature**._
+_A group of features will be a **feature set**._
+_Value of a feature set is referred as a **sample**_
+
+**output = `activation`(weights * inputs + bias)**
