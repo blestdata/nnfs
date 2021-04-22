@@ -24,3 +24,14 @@ weights and biases are adjustible paramaters of a neural network
 # First Neurons
 
 When you initialize parameters in neural networks, our network will have weights initialized randomly, and biases set as zero to start. The values for weights and biases are what get “trained,” and they are what make a model actually work (or not work).
+
+for a set of inputs for a single neuron:-
+```python
+result = 0
+inputvalues = [1, 5, 6, 23, -14, 9]
+weightvalues = [0.5, 0.9, 1.6, 0.4, 1.6, -0.1]
+bias = 3
+for i in range(len(inputvalues)):
+    result += inputvalues[i]*weightvalues[i]
+result += bias
+```
