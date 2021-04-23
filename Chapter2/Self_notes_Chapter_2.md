@@ -21,6 +21,9 @@ _Value of a feature set is referred as a **sample**_
 
 weights and biases are adjustible paramaters of a neural network
 
+A list of lists is an __array__ when it is __homologous__ (i.e. same structure) in one dimension even if different dimensions have different length. For machine learning, __matrix__ is just a rectangular 2D array, and A __tensor__ object is an object that can be represented as an array.
+
+
 # First Neurons
 
 When you initialize parameters in neural networks, our network will have weights initialized randomly, and biases set as zero to start. The values for weights and biases are what get “trained,” and they are what make a model actually work (or not work).
@@ -53,3 +56,7 @@ for i in range(len(weights_list_of_list)):
     intermediate_output += bias_list[i]
     output_list.append(intermediate_output)
 ```
+
+for a set of points and values, the number of neurons would be the number of sublist in the weights list. This should be the same as the number of values in bias as each neuron should have its own sets of weights and its own bias. 
+
+Also, for each input each neuron should have a weight corresponding to the input. For successive layers, the number of neurons may increase, decrease or stay the same value. 
