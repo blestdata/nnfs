@@ -40,7 +40,7 @@ def neuron_layer(input_values, weights_list_of_list, bias_list):
         for j in range(len(input_values)):
             print("neuron {} input {} has input value {} and weight {} with total value {}".format(i, j, input_values[j], weights_list_of_list[i][j], input_values[j]*weights_list_of_list[i][j]))
             intermediate_output += (input_values[j])*(weights_list_of_list[i][j])
-        intermediate_output += bias[i]
+        intermediate_output += bias_list[i]
         output_list.append(intermediate_output)
 
     return output_list

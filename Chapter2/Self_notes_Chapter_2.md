@@ -35,3 +35,21 @@ for i in range(len(inputvalues)):
     result += inputvalues[i]*weightvalues[i]
 result += bias
 ```
+
+Neural networks typically have layers that consist of more than one neuron. Each neuron in a layer takes exactly the same input but contains its own set of weights and its own bias, producing its own unique output. This is called a __fully connected neural network__ every
+neuron in the current layer has connections to every neuron from the previous layer.
+
+```python
+input_values = [3, 5, 1, 8]
+weights_list_of_list = [[0.1, 0.5, -0.2, 0.6], [0.4, 0.7, 0.3, 0.2], [0.2, 0.2, 0.9, 0.8]]
+bias_list = [5, 1.9, 4]
+
+output_list = []
+
+for i in range(len(weights_list_of_list)):
+    intermediate_output = 0
+    for j in range(len(input_values)):
+        intermediate_output += (input_values[j])*(weights_list_of_list[i][j])
+    intermediate_output += bias_list[i]
+    output_list.append(intermediate_output)
+```
