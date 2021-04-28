@@ -26,6 +26,11 @@ A list of lists is an __array__ when it is __homologous__ (i.e. same structure) 
 A __vector__ in math is what we call a list
 in Python or a 1-dimensional array in NumPy. A __dot product__ of two vectors is a sum of products of consecutive vector elements. Both vectors must be of the same size (have an equal number of elements).
 
+A matrice with dimension of 1 horizontally is a **column vector** and same vertically is a **row vector**. 
+And a dot product of two vectors equals a matrix product of
+a row and column vector. 
+**Transpose** interchanges rows and columns.
+
 
 # First Neurons
 
@@ -68,3 +73,14 @@ Instead of loops above, Numpy implementation of the dot product would be:-
 ```python
 output = np.dot(input_list, weights_list) + bias
 ```
+
+To convert a list into a numpy matrice, make an array out of it by contining it into a list.
+```python
+a = np.array([[1, 2, 3, 4, 5]])
+# transpose
+a.T
+# dot product
+np.dot(a, a.T)
+```
+
+### Layer of Neurons
